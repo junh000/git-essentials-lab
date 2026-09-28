@@ -10,6 +10,6 @@ public class LoanPolicy {
     }
 
     public int overdueFee(int daysLate) {
-        return daysLate * 100;
+        return Math.max(0, daysLate) * 100;
     }
 }
